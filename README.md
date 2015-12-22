@@ -1,12 +1,13 @@
 # EncryptUtils
-总结了一下常用的一些加密方式：1）对称加密：AES DES
-                              2）编码：base64       
-                              3）哈希：MD5 SHA
-                              4) 非对称加密：RSA
-                              
+总结了一下常用的一些加密方式：
+1. 对称加密：AES DES
+2. 非对称加密：RSA
+3. 编码：base64 
+4. 哈希：MD5 SHA
+ 
 测试类：                              
- ...
- public static void main(String[] args) throws IOException, Exception {
+```Java
+public static void main(String[] args) throws IOException, Exception {
 		//-----------------AES测试------------------------------------
 		System.out.println("---------------AES测试-----------------------");
 		String aesEncrypt=AESUtils.encrypt(content, key);
@@ -45,11 +46,13 @@
 		System.out.println("加密前：content--------->"+content);
 		System.out.println("rsaEncrypt：rsaEncrypt--------->"+rsaEncrypt);
 		System.out.println("rsaDncrypt：rsaDncrypt--------->"+rsaDncrypt);
- 
+
+
 	}
- ...
+```
+ 
  测试结果：
- ...
+ ```
  ---------------AES测试-----------------------
 加密前：content--------->1234567890
 加密后：aesEncrypt--------->82BBCA1E8FF05DAE79ADCE1840B84233
@@ -73,7 +76,7 @@ md52：md52--------->E807F1FCF82D132F9BB018CA6738A19F
 加密前：content--------->1234567890
 rsaEncrypt：rsaEncrypt--------->19D2FB2372CBDB252C914BB6A00C570C2A39E9837F6952DD5016C26C319041495662C5D33E720B4B1C6F4D115607A4C14AAA892D7E18749106F5615E538EC9F68EE7803D12E1C33A23E0A4579E0D8C3C1EA5CBBF500EFDA41F5EFFB78ED8B3306782379AA70A24937165B9C9A6E1DD61BE27BAA1F82D7CDAA27176CA3DDB4B2B
 rsaDncrypt：rsaDncrypt--------->1234567890
- ...
+```
  
- 后期还会不断总结一些 其他的加密方式和各自的优缺点以及使用场景。
+ 后期还会不断总结一些其他的加密方式和各自的优缺点以及使用场景。
  
