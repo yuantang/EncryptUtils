@@ -1,15 +1,15 @@
 # EncryptUtils
 总结了一下常用的一些加密方式：
-			1. 对称加密：AES DES
-			2. 非对称加密：RSA
-			3. 编码：base64 
-			4. 哈希：MD5 SHA
+			1). 对称加密：AES DES
+			2). 非对称加密：RSA
+			3). 编码：base64 
+			4). 哈希：MD5 SHA
  
 测试类：                              
 ```Java
 public static void main(String[] args) throws IOException, Exception {
-                 String content="1234567890";
-                 String key = "0987654321";
+	String content="1234567890";
+        String key = "0987654321";
 		//-----------------AES测试------------------------------------
 		System.out.println("---------------AES测试-----------------------");
 		String aesEncrypt=AESUtils.encrypt(content, key);
