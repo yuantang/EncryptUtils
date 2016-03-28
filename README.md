@@ -1,9 +1,9 @@
 # EncryptUtils
 总结了一下常用的一些加密方式：
-			1)对称加密：AES DES
+			1)对称加密：AES DES RC4
 			2)非对称加密：RSA
 			3)编码：base64 
-			4)哈希：MD5 SHA
+			4)摘要：MD5 SHA HMAC
  
 测试类：                              
 ```Java
